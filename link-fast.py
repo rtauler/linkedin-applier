@@ -19,14 +19,16 @@ import apply_job
 class LinkBot(apply_job.Apply):
     def __init__(self):
         options = Options()
+        #generate fake user agent
         ua = UserAgent()
         userAgent = ua.random
+        #display which user agent we're using
         print(userAgent)
         options.add_argument(f'user-agent={userAgent}')
         options.add_argument("user-data-dir=cookies/rtauler") 
         #keep chrome window open to debug html/css
         options.add_experimental_option("detach", True)
-        self.driver = webdriver.Chrome('/usr/local/bin/chromedriver',options=options,service_args=["--verbose", "--log-path=/home/rtauler/linkedin-applier/log.log"])
+        self.driver = webdriver.Chrome('/usr/local/bin/chromedriver',options=options)
         self.driver.implicitly_wait(15)
 
     def ran(self):
