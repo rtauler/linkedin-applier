@@ -11,4 +11,4 @@ class All(test2.Mixin): # Could inherit many more mixins
 
 bot = All()
 
-bot.popup()
+bot.popup_mixin()
