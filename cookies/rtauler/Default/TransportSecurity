@@ -1,0 +1,62 @@
+{
+   "+ccWXqaoHJ9hfuXbleKV6FQUrBlyXAJ31BdqjNQJpHs=": {
+      "expiry": 1619014877.031412,
+      "mode": "force-https",
+      "sts_include_subdomains": false,
+      "sts_observed": 1587478877.031419
+   },
+   "5EdUoB7YUY9zZV+2DkgVXgho8WUvp+D+6KpeUOhNQIM=": {
+      "expiry": 1619083683.140218,
+      "mode": "force-https",
+      "sts_include_subdomains": false,
+      "sts_observed": 1587547683.140222
+   },
+   "8/RrMmQlCD2Gsp14wUCE1P8r7B2C5+yE0+g79IPyRsc=": {
+      "expiry": 1619083682.360044,
+      "mode": "force-https",
+      "sts_include_subdomains": false,
+      "sts_observed": 1587547682.36005
+   },
+   "9jFJneXMVHTXLZTJwwlFuScHMcN/99brFSgqRKTizGw=": {
+      "expiry": 1618684510.506204,
+      "mode": "force-https",
+      "sts_include_subdomains": false,
+      "sts_observed": 1587148510.506207
+   },
+   "TZmujbl93Yt3JI8wZ4X/zjkA0WFNGNW44A+o7h4YyHw=": {
+      "expiry": 1619083714.094152,
+      "mode": "force-https",
+      "sts_include_subdomains": true,
+      "sts_observed": 1587547714.094157
+   },
+   "YHSMTQnYC85xpfxQXKcYuC0wBIhWAWiCTB+UjCnXwn0=": {
+      "expiry": 1619083692.29987,
+      "mode": "force-https",
+      "sts_include_subdomains": true,
+      "sts_observed": 1587547692.299875
+   },
+   "nAuqgR4iEWti7SOdT3UHPl6rmZU/DeaIm38P2O2OkgA=": {
+      "expiry": 1619014876.905551,
+      "mode": "force-https",
+      "sts_include_subdomains": false,
+      "sts_observed": 1587478876.905555
+   },
+   "tXjOdUMSBgtiUbrbGkl6XP80fiDB8uXOkUbnCf0IKvw=": {
+      "expect_ct": {
+         "expect_ct_enforce": false,
+         "expect_ct_expiry": 1587634117.250205,
+         "expect_ct_observed": 1587547717.250205,
+         "expect_ct_report_uri": "https://www.linkedin.com/platform-telemetry/ct"
+      },
+      "expiry": 1590139717.250189,
+      "mode": "force-https",
+      "sts_include_subdomains": false,
+      "sts_observed": 1587547717.250194
+   },
+   "y12B/2jqhoQhsoKgdTjVSWE7xfk5BMq4s243/UjNUHU=": {
+      "expiry": 1619083706.521076,
+      "mode": "force-https",
+      "sts_include_subdomains": true,
+      "sts_observed": 1587547706.52108
+   }
+}

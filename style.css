@@ -1,0 +1,30 @@
+body{
+	height: 5000px;
+}
+
+.test1{
+	height: 200px;
+	width: 400px;
+	overflow: scroll;
+	background-color: blue;
+	float: left;
+}
+
+.inside-test1{
+	height: 5000px;
+	background-color: red;
+}
+
+.test2{
+	height: 200px;
+	width: 400px;
+	overflow: scroll;
+	background-color: green;
+	float: left;
+}
+
+.inside-test2{
+	height: 5000px;
+	background-color: yellow;
+}
+
