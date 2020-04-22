@@ -13,7 +13,7 @@ class LinkBot():
     def __init__(self):
         options = Options()
         options.add_argument("user-data-dir=cookies/rtauler") 
-        self.driver = webdriver.Chrome('/usr/local/bin/chromedriver',options=options,service_args=["--verbose", "--log-path=/home/rtauler/linkedin/log.log"])
+        self.driver = webdriver.Chrome('/usr/local/bin/chromedriver',options=options,service_args=["--verbose", "--log-path=/home/rtauler/linkedin-applier/log.log"])
         self.driver.implicitly_wait(15)
 
     def login(self):
