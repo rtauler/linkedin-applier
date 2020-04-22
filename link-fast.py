@@ -12,21 +12,24 @@ from selenium.webdriver.common.action_chains import ActionChains
 #job appliers
 import apply_job
 #apply job goes here
+#create main class, and import inside the apply job class
 class LinkBot(apply_job.Apply):
     def __init__(self):
         options = Options()
         options.add_argument("user-data-dir=cookies/rtauler") 
+        #keep chrome window open to debug html/css
+        options.add_experimental_option("detach", True)
         self.driver = webdriver.Chrome('/usr/local/bin/chromedriver',options=options,service_args=["--verbose", "--log-path=/home/rtauler/linkedin-applier/log.log"])
         self.driver.implicitly_wait(15)
 
     def login(self):
         self.driver.get('https://www.linkedin.com/jobs/')
         print("Entering linkedin")
-        sleep(2)
+        sleep(0.5)
     
     def input_job(self):
         job_name = self.driver.find_element_by_css_selector('[aria-label="Buscar empleos"]')
-        job_name.send_keys('Designer')         
+        job_name.send_keys('Frontend')         
         print('Typed name of job')
 
         job_name = self.driver.find_element_by_css_selector('[aria-label="Buscar ubicación"]')
@@ -78,9 +81,13 @@ class LinkBot(apply_job.Apply):
             #click on the scrolled card using as reference the header logo
             job_card.move_to_element(link_logo).move_by_offset(370 , 230).click().perform()
 
+    # def ran(self):
+    #     rnd_time = decimal.Decimal(random.randrange(10000))/2000
+    #     print(str(rnd_time)+"s")
+    #     return rnd_time
+
     def ran(self):
-        rnd_time = decimal.Decimal(random.randrange(10000))/2000
-        print(str(rnd_time)+"s")
+        rnd_time = 0
         return rnd_time
 
     def auto_clicker(self):
@@ -102,9 +109,10 @@ bot = LinkBot()
 bot.login()
 bot.input_job()
 bot.filter_ea()
-sleep(1)
+sleep(0.1)
 bot.filter_recent()
 bot.auto_clicker()
+sleep(10000000)
 #bot.apply_job()
 #bot.scroll_next()
 #bot.click_card()
