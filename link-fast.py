@@ -9,6 +9,7 @@ import random
 import itertools    
 from selenium.webdriver.common.action_chains import ActionChains
 
+#apply job goes here
 class LinkBot():
     def __init__(self):
         options = Options()
@@ -57,8 +58,9 @@ class LinkBot():
         apply_btn.move_to_element(rec_filter_btn).move_by_offset(200, 100).click().perform()       
 
         print("Sort by most recent")
-
-    def apply_job(self):
+        
+#------------------------------------------------
+    def apply_job_1(self):
         sleep(0.5)
         try:
             #try to click the easy apply button, if its not there beacuse the job is already applied go to the next
@@ -97,7 +99,7 @@ class LinkBot():
             #this is for the case of in an already filtered screen to display only easy apply there's no 
             #easy apply button in the job card
             pass
-
+#------------------------------------------------
 
     def scroll_next(self,i):           
             #assign id to job list to make it scrollable
@@ -133,7 +135,8 @@ class LinkBot():
             sleep(self.ran())
 
             #apply to a job
-            bot.apply_job()
+            bot.apply_job_1()
+            
 
 bot = LinkBot()
 bot.login()
