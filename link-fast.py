@@ -25,7 +25,7 @@ class LinkBot(apply_job.Apply):
     def login(self):
         self.driver.get('https://www.linkedin.com/jobs/')
         print("Entering linkedin")
-        sleep(0.5)
+        sleep(0.5) 
     
     def input_job(self):
         job_name = self.driver.find_element_by_css_selector('[aria-label="Buscar empleos"]')
